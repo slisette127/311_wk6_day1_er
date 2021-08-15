@@ -68,14 +68,16 @@ We are going to use a sample schema given to use by MySQL.
 
 ##### ER Diagram Diagnosis 
 
-1. What is the relationship between the "actor" and "film_actor" tables?
+1. What is the relationship between the "actor" and "film_actor" tables? actor_id SMALLINT(5) and last_update TIMESTAMP
 
-2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+3. How many foreign keys does the "payments" table have? How can you tell? 1, rental_id INT(11). It is the only one linking the payment to the (parent) rental.
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+![screenshot](https://user-images.githubusercontent.com/77766707/129464288-1140631f-f563-456e-a189-10388845a997.jpg)
+
